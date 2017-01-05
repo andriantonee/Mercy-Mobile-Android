@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/EditTextSearchMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_edit_text_background"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawablePadding="16dp"
+        android:hint="Search by username or name"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <include layout="@layout/screen_loading" />
+
+        <include layout="@layout/screen_error" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerViewSearchMemberResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ScreenSearchMemberNoResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:clickable="false"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/SearchMemberNoResultImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_mood_bad_white_80dp" />
+
+            <TextView
+                android:id="@+id/SearchMemberNoResultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SearchMemberNoResultImageView"
+                android:gravity="center_horizontal"
+                android:text="No member result for keyword [keyword]"
+                android:textColor="#7fffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

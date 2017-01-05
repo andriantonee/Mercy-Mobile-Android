@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/screen_loading" />
+
+    <include layout="@layout/screen_error" />
+
+    <RelativeLayout
+        android:id="@+id/ScreenTournamentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/ScrollViewTournamentContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ButtonRegisterOrTournamentDetail"
+            android:background="#000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextViewTournamentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#7e7e7e"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Tournament Name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignBounds"
+                    android:background="@color/colorPrimary"
+                    android:columnCount="2"
+                    android:useDefaultMargins="true">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Category :"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TextViewGameCategory"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dota 2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Registration Open :"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TextViewRegistrationOpen"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="29 Nov 2016 12:10:10"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Registration Close :"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TextViewRegistrationClose"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="29 Nov 2016 12:10:10"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Member / Team Capacity :"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TextViewMemberPerTeamCapacity"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Location :"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/TextViewLocation"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Playing Location"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#7e7e7e"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/TextViewTournamentDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Tournament Description"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#7e7e7e"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Rules"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/TextViewTournamentRules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Tournament Rules"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/ButtonRegisterOrTournamentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Register Now" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/screen_loading" />
+
+    <include layout="@layout/screen_error" />
+
+    <include layout="@layout/screen_dont_have_team" />
+
+    <ScrollView
+        android:id="@+id/ScrollViewTeamDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:alignmentMode="alignBounds"
+                android:background="@color/colorPrimary"
+                android:columnCount="2"
+                android:useDefaultMargins="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Detail"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_columnSpan="2"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Name :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/TextViewTeamName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Secret"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Leader Name :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/TextViewTeamLeaderName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Andrianto Nee"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Leader Username :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/TextViewTeamLeaderUsername"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="andriantonee"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Created At :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/TextViewTeamCreatedAt"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="29 Nov 2016 12:10:10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/EditTeamNameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Edit Team Name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorGray" />
+
+                <EditText
+                    android:id="@+id/EditTextTeamName"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/left_side_color_black"
+                    android:drawableLeft="@drawable/ic_people_outline_white_18dp"
+                    android:drawablePadding="28dp"
+                    android:hint="Team Name"
+                    android:inputType="textFilter"
+                    android:maxLength="50"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+
+                <Button
+                    android:id="@+id/ButtonUpdateTeamName"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Update Team Name"
+                    android:textColor="@drawable/text_color_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/DisbandTeamContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Disband Team"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorGray" />
+
+                <Button
+                    android:id="@+id/ButtonDisbandTeam"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Disband"
+                    android:textColor="@drawable/text_color_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/TournamentListFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_device_hub_white_24dp"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

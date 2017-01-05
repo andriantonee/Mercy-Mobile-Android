@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/screen_loading" />
+
+    <include layout="@layout/screen_error" />
+
+    <LinearLayout
+        android:id="@+id/ScreenTournamentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayoutTournamentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabMaxWidth="120dp"
+            app:tabMinWidth="120dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorSelectedTextPager"
+            app:tabTextColor="#FFFFFF" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ViewPagerTournamentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ScreenTournamentDetailNull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:clickable="false"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/SearchMemberNoResultImageView"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_mood_bad_white_80dp" />
+
+        <TextView
+            android:id="@+id/SearchMemberNoResultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SearchMemberNoResultImageView"
+            android:gravity="center_horizontal"
+            android:text="Sorry, there is no tournament detail yet."
+            android:textColor="#7fffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</FrameLayout>

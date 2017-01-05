@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/TextViewPlayer_1"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Player 1"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/TextViewPlayer_1_Score"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="-"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/TextViewPlayer_2_Score"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/TextViewPlayer_2"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Player 2"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewScheduledTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="2dp"
+            android:text="Monday, 29 Nov 2016 12:10:10"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

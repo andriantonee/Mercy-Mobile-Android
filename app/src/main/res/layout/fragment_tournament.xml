@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/screen_loading" />
+
+    <include layout="@layout/screen_error" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayoutTournament"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerViewTournament"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayoutTournamentNull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:clickable="false"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/TournamentNullImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_mood_bad_white_80dp" />
+
+            <TextView
+                android:id="@+id/TournamentNullTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TournamentNullImageView"
+                android:gravity="center_horizontal"
+                android:text="No tournament list yet."
+                android:textColor="#7fffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

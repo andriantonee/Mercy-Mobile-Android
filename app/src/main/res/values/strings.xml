@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mercy</string>
+    <string name="connection_error">Connection Error. Please Try Again</string>
+    <string name="title_activity_portal">PortalActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="search_view_label">Tournament name</string>
+    <string name="search_view_hint">Search by tournament name</string>
+</resources>

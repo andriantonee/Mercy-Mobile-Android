@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_authentication"
+        android:checkableBehavior="none"
+        android:visible="true">
+
+        <item
+            android:id="@+id/nav_authentication"
+            android:icon="@drawable/ic_person_outline"
+            android:title="Login/Register" />
+    </group>
+
+    <group
+        android:id="@+id/group_personal"
+        android:checkableBehavior="none"
+        android:visible="false">
+
+        <item
+            android:id="@+id/nav_manage_account"
+            android:icon="@drawable/ic_settings"
+            android:title="Manage Account" />
+        <item
+            android:id="@+id/nav_manage_team"
+            android:icon="@drawable/ic_people_outline"
+            android:title="My Team" />
+        <item
+            android:id="@+id/nav_team_invitations"
+            android:icon="@drawable/ic_person_add"
+            android:title="Team Invitations" />
+    </group>
+
+    <group
+        android:id="@+id/group_logout"
+        android:checkableBehavior="none"
+        android:visible="false">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrolViewRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <EditText
+            android:id="@+id/EditTextUsername"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/left_side_color_black"
+            android:drawableLeft="@drawable/ic_perm_identity_white_18dp"
+            android:drawablePadding="28dp"
+            android:hint="Username"
+            android:inputType="textFilter"
+            android:maxLength="20"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/EditTextPassword"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/left_side_color_black"
+            android:drawableLeft="@drawable/ic_lock_white_18dp"
+            android:drawablePadding="28dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/EditTextConfirmPassword"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/left_side_color_black"
+            android:drawableLeft="@drawable/ic_lock_white_18dp"
+            android:drawablePadding="28dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/EditTextFirstName"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/left_side_color_black"
+            android:drawableLeft="@drawable/ic_insert_emoticon_white_18dp"
+            android:drawablePadding="28dp"
+            android:hint="First Name"
+            android:inputType="textFilter"
+            android:maxLength="100"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/EditTextLastName"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/left_side_color_black"
+            android:drawableLeft="@drawable/ic_insert_emoticon_white_18dp"
+            android:drawablePadding="28dp"
+            android:hint="Last Name"
+            android:inputType="textFilter"
+            android:maxLength="100"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <EditText
+            android:id="@+id/EditTextPhone"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/left_side_color_black"
+            android:drawableLeft="@drawable/ic_local_phone_white_18dp"
+            android:drawablePadding="28dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="62"
+            android:textCursorDrawable="@drawable/cursor_color" />
+
+        <Button
+            android:id="@+id/ButtonRegister"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:text="Register"
+            android:textColor="@drawable/text_color_button" />
+    </LinearLayout>
+</ScrollView>
